@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/pexels-yunustug-7957992.jpg) center center;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box {
+    padding: 0px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #333;
+    
+}
+
+form {
+    width: 100%;
+}
+
+.input_username input, .input_password input {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.remember_me {
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.btn_login button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background: linear-gradient(135deg, #4CAF50, #00C9A7);
+    font-size: large;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: start;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.sign_up p {
+    margin-bottom: 40px;
+}
+
+.sign_up a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.remember_me input {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.remember_me input[type="checkbox"]:checked {
+    background: #00C9A7;
+    border-color: #00C9A7;
+}
+
+.remember_me input[type="checkbox"]:checked::after {
+    content: "\2714";
+    color: #fff;
+    position: absolute;
+    font-size: medium;
+}
