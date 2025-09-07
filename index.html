@@ -3,6 +3,8 @@
     <head>
         <title>Latihan Login Page</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="main.js" defer></script>
     </head>
         <body>
             <div class="container">
@@ -12,11 +14,13 @@
 
                     <form>
                         <div class="input_username">
+                            <i class="fa-regular fa-user icon"></i>
                             <input type="text" placeholder="username">   
                         </div>
 
                         <div class="input_password">
-                            <input type="password" placeholder="password">
+                            <i class="fa-regular fa-eye icon" id="togglePassword"></i>
+                            <input type="password" id="password" placeholder="password">
                         </div>
 
                         
